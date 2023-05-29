@@ -1,0 +1,16 @@
+<div class="container">
+  
+  <div class="col-md-2 col-lg-2 col-xs-12 .col-sm-12"></div>
+  <div #gridDiv class="col-md-8 col-lg-8 col-xs-12 col-sm-12" *ngIf="grid">
+    <div>
+      <label>Enter a number:</label>
+      <input type="text" OnlyNumber="true" class="form-control" [(ngModel)]="inputNumber" (change)="generateGrid()" />
+    </div>
+    <div class="row" *ngFor="let row of grid">
+      <div class="cell" *ngFor="let cell of row">
+        <div class="rectangle" [ngStyle]="getRectangleStyle()"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 col-lg-2 col-xs-12 .col-sm-12"></div>
+</div>

@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+  }
+  .cell {
+    flex: 1;
+    padding: 5px;
+  }
+
+  .grid{
+    width: 50%;
+    text-align: center;
+    margin: auto 0px;
+  }
+
+  .rectangle {
+    border: 1px solid #ddd;
+    background: #333;
+    border-radius: 15px;
+}
